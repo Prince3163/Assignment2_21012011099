@@ -10,10 +10,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var add:Button=findViewById(R.id.add)
-
-        add.setOnClickListener(){
-
-        }
     }
 }

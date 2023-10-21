@@ -10,77 +10,45 @@
         android:id="@+id/firstCL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#990000"
+        android:background="#9C5CFA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/title"
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PDF Reader"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/comic_neue"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Documents Reader"
             android:textColor="#FFFFFF"
-            android:textSize="35dp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/thirdCL"
+        android:id="@+id/secondCL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#990000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstCL"
         app:layout_constraintStart_toStartOf="parent">
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-12"
-            android:backgroundTint="#990000"
-            android:clickable="true"
-            android:tintMode="@color/white"
-            app:borderWidth="8dp"
-            app:fabCustomSize="75dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/baseline_add_24"></com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/history"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#990000"
-            android:clickable="true"
-            android:tintMode="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/add"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/baseline_history_24">
-
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#990000"
-            android:clickable="true"
-            android:tintMode="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/add"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/baseline_edit_24">
-
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

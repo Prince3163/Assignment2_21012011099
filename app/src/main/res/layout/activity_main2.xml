@@ -6,21 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/t1"
-        android:fontFamily="@font/comic_neue"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="Document Files"
-        android:textColor="#676767"
-        android:textSize="20dp"
-        android:textStyle="bold"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstCL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F54A4E"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
-    </TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:fabCustomSize="45dp"
+            app:maxImageSize="25dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="@font/comic_neue"
+            android:gravity="center"
+            android:text="PDF Files"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondCL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstCL">
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="65dp"
+            android:gravity="center"
+            android:src="@drawable/img_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Import PDF from Device"
+            android:fontFamily="@font/comic_neue"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

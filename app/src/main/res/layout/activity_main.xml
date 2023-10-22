@@ -17,11 +17,14 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/img"
+            app:flow_horizontalBias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            >
+            app:fabCustomSize="45dp"
+            app:maxImageSize="25dp">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
@@ -31,12 +34,13 @@
             android:layout_height="70dp"
             android:fontFamily="@font/comic_neue"
             android:gravity="center"
-            android:textStyle="bold"
             android:text="Documents Reader"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -44,10 +48,101 @@
         android:id="@+id/secondCL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#990000"
         app:layout_constraintTop_toBottomOf="@+id/firstCL"
         app:layout_constraintStart_toStartOf="parent">
 
+        <TextView
+            android:id="@+id/t1"
+            android:fontFamily="@font/comic_neue"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Document Files"
+            android:textColor="#676767"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ib2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            android:src="@drawable/img_1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            android:src="@drawable/img_1">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/ib3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/ib2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:src="@drawable/img_1">
+        </ImageButton>
+
+
+        <TextView
+            android:id="@+id/it1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/comic_neue"
+            android:text="PDF Files"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/it2"
+            app:layout_constraintTop_toBottomOf="@id/ib1"
+            />
+
+        <TextView
+            android:id="@+id/it2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/comic_neue"
+            android:text="Word Files"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ib2"
+            />
+
+        <TextView
+            android:id="@+id/it3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/comic_neue"
+            android:text="PPT Files"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/it2"
+            app:layout_constraintTop_toBottomOf="@id/ib3"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

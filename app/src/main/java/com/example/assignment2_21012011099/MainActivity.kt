@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val intentAction = intent.action
+        val intentType = intent.type
 
         var pb : ImageButton=findViewById(R.id.ib1)
         var wb : ImageButton=findViewById(R.id.ib2)

@@ -1,7 +1,7 @@
 
 # FileFusion -A Document Reader App
 
-Document Reader App is an Android application developed using Kotlin programming language. This app allows users to read Document Files (like PDF, Word, PPT and etc.)  from users devices. It provides a simple and user-friendly interface for accessing  Files on Android smartphones and tablets.
+FileFusion is an Android application developed using Kotlin programming language. This app allows users to read Document Files (like PDF, Word, PPT and etc.)  from users devices. It provides a simple and user-friendly interface for accessing Files on Android smartphones and tablets.
 ## Features
 
 - Access Files From Device

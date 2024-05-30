@@ -1,7 +1,7 @@
 
 # Document Reader App
 
-Document Reader App is an Android application developed using Kotlin programming language. This app allows users to read PDF files from their devices. It provides a simple and user-friendly interface for viewing PDF documents on Android smartphones and tablets.
+Document Reader App is an Android application developed using Kotlin programming language. This app allows users to read Document Files (like PDF, Word, PPT and etc.)  from users devices. It provides a simple and user-friendly interface for accessing  Files on Android smartphones and tablets.
 ## Features
 
 - Access Files From Device
@@ -18,4 +18,4 @@ Document Reader App is an Android application developed using Kotlin programming
 ## Chalanges
     ->The primary challenge I encountered was integrating PDF file rendering into a running activity from the device storage.
     
-    ->It is also chalanging to load file and make smooth scroll.
+    ->Load and smooth scroll the file is bit difficult.
